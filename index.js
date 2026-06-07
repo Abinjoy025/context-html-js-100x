@@ -38,6 +38,12 @@ function AddItem(index){
         const p = parseInt(document.getElementById("itemp"+index).innerHTML)
         document.getElementById("totalprice").innerHTML= t - p
         document.getElementById("cart"+index).innerHTML = ""
+        const tlist = parseInt(document.getElementById("totalitems").innerHTML)
+        document.getElementById("totalitems").innerHTML= tlist +1 
+
+
+
+
          
     })
     const br = document.createElement("br")
