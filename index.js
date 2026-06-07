@@ -37,7 +37,7 @@ function AddItem(index){
         let t = parseInt((document.getElementById("totalprice").innerHTML))
         const p = parseInt(document.getElementById("itemp"+index).innerHTML)
         document.getElementById("totalprice").innerHTML= t - p
-        document.getElementById("cart"+index).innerHTML = ""
+        document.getElementById("cart"+index).remove()
         const tlist = parseInt(document.getElementById("totalitems").innerHTML)
         document.getElementById("totalitems").innerHTML= tlist +1 
 
